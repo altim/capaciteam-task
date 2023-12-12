@@ -57,11 +57,7 @@ function App() {
         />
       </div>
       <div className={styles.content}>
-        <Content
-          chapters={chapters}
-          selectedPath={selectedPath}
-          onSelected={() => console.log("hi")}
-        />
+        <Content chapters={chapters} onSelected={handleMenuItemSelected} />
       </div>
     </div>
   );

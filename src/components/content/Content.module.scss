@@ -1,11 +1,24 @@
 .chapter {
   scroll-margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 10px;
+
+  &:hover {
+    background: #8380bdff;
+
+    h2,
+    p {
+      color: #fff;
+    }
+  }
 
   h2 {
     margin-bottom: 0.4em;
+    transition: all 0.4s;
   }
 
   p {
-    margin-bottom: 1em;
+    transition: all 0.4s;
   }
 }
