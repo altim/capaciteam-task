@@ -38,15 +38,15 @@ export const useChapters = () => {
           ?.children.push({ ...chapter, children: [] });
       });
 
-    chapters
-      ?.filter((chapter) => chapter.level === 3)
-      ?.forEach((chapter) => {
-        tree.forEach((levelOneChapter) => {
-          levelOneChapter.children
-            .find((item) => item.id === chapter.parent_id)
-            ?.children.push({ ...chapter, children: [] });
-        });
-      });
+    // chapters
+    //   ?.filter((chapter) => chapter.level === 3)
+    //   ?.forEach((chapter) => {
+    //     tree.forEach((levelOneChapter) => {
+    //       levelOneChapter.children
+    //         .find((item) => item.id === chapter.parent_id)
+    //         ?.children.push({ ...chapter, children: [] });
+    //     });
+    //   });
 
     return tree;
   }, [chapters]);

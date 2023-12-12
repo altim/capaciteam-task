@@ -213,7 +213,7 @@
           "content": "TBD"
         },
         {
-          "id": "34530923-41b3-4240-9d39-289ca01c1d5c",
+          "id": "34530923-41b3-4240-9d39-289ca01c1d5d",
           "name": "Chapter 1.11.19",
           "level": 3,
           "parent_id": "4959ab4d-956b-4e8a-bc7a-abbe2a09ed49",
@@ -346,7 +346,7 @@
           "content": "TBD"
         },
         {
-          "id": "9c439475-5e9a-49c6-9586-b58a6d619f07",
+          "id": "9c439475-5e9a-49c6-9586-b58a6d619f08",
           "name": "Chapter 1.11.38",
           "level": 3,
           "parent_id": "4959ab4d-956b-4e8a-bc7a-abbe2a09ed49",
@@ -374,7 +374,7 @@
           "content": "TBD"
         },
         {
-          "id": "9136ff46-e647-4fdf-a204-252be781f5d4",
+          "id": "9136ff46-e647-4fdf-a204-252be781f5d5",
           "name": "Chapter 1.11.42",
           "level": 3,
           "parent_id": "4959ab4d-956b-4e8a-bc7a-abbe2a09ed49",
@@ -409,6 +409,7 @@
           "content": "Child content placeholder"
         },
         {
+          "id": "04b23dc0-ae4d-4b10-be1e-d1684974ace10",
           "parent_id": "04b23dc0-ae4d-4b10-be1e-d1684974ace9",
           "name": "Chapter 1.13.1",
           "level": 3,
