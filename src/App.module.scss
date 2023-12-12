@@ -3,9 +3,15 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-column-gap: 20px;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.sidebar, .content {
-  border: 1px solid #E0E0E0;
+.sidebar,
+.content {
+  border: 1px solid #e0e0e0;
   padding: 20px;
+  height: 100dvh;
+  overflow: auto;
+  scroll-behavior: smooth;
 }

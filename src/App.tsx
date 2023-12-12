@@ -3,6 +3,7 @@ import styles from "./App.module.scss";
 import { useChapters } from "./hooks/useChapters";
 import { SidebarMenu } from "./components/sidebar-menu/SidebarMenu";
 import { ChapterTreeItemType } from "./hooks/useChapter.types";
+import { Content } from "./components/content/Content";
 
 function App() {
   const [selectedChapter, setSelectedChapter] = useState<
@@ -55,7 +56,13 @@ function App() {
           selectedPath={selectedPath}
         />
       </div>
-      <div className={styles.content}>Content area</div>
+      <div className={styles.content}>
+        <Content
+          chapters={chapters}
+          selectedPath={selectedPath}
+          onSelected={() => console.log("hi")}
+        />
+      </div>
     </div>
   );
 }

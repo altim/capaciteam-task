@@ -28,13 +28,15 @@ const renderMenu = (
               !!menuItem?.children.length && selectedPath.includes(menuItem.id),
           })}
         >
-          <span
-            className={classNames({
-              [styles.selectedItem]: selectedPath.includes(menuItem.id),
-            })}
-          >
-            {menuItem.name}
-          </span>
+          <a href={`#${menuItem.id}`}>
+            <span
+              className={classNames({
+                [styles.selectedItem]: selectedPath.includes(menuItem.id),
+              })}
+            >
+              {menuItem.name}
+            </span>
+          </a>
           {menuItem?.children?.length && selectedPath.includes(menuItem.id)
             ? renderMenu(menuItem.children, onClick, selectedPath)
             : null}
