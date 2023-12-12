@@ -1,0 +1,11 @@
+.page {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 20px;
+}
+
+.sidebar, .content {
+  border: 1px solid #E0E0E0;
+  padding: 20px;
+}
