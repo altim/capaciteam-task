@@ -12,4 +12,7 @@ a zatim
     npm start
 ```
 
+**Napomena:**
+omogucio sam da se fajl `.env.development` commituje (sklonivsi ga iz `.gitignore` fajla) kako bi vam bilo lakse da pokrenete projekat
+
 
