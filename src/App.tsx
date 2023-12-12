@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./App.module.scss";
-import { getChapters } from "./api/chapters/chaptersApi";
-import { DocumentType } from "./api/chapters/chaptersApi.types";
+import { useChapters } from "./hooks/useChapters";
 
 function App() {
-  const [chapters, setChapters] = useState<DocumentType[]>([]);
+  const { chaptersTree } = useChapters();
 
-  useEffect(() => {
-    (async () => {
-      const data = await getChapters();
-      setChapters(data);
-    })();
-  });
-
-  console.log("CHAPTERS:", chapters);
+  // console.log("chaptersTree:", chaptersTree);
 
   return (
     <div className={styles.page}>
